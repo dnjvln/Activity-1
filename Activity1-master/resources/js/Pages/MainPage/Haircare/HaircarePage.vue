@@ -1,0 +1,300 @@
+<template>
+    <div class="main-container">
+        <MainHeaderComponent :favoritesCount="favoritesStore.favoritesCount" ref="headerComponent" />
+        <NavbarComponent
+            :haircareUrl="haircareUrl"
+            :homeUrl="homeUrl"
+            :skincareUrl="skincareUrl"
+        />
+        <div class="main-container-2">
+            <div class="flex-row">
+                <div class="line"></div>
+                <span class="title-holder">HAIRCARE PRODUCTS</span>
+                <div class="line-1"></div>
+            </div>
+            <div class="rectangle">
+                <div class="rectangle-2">
+                    <input class="group-input" placeholder="Search product..." />
+                </div>
+                <span class="search-product">Search Product: </span>
+                <span class="filter">Filter</span>
+                <div class="filtering"><div class="vector"></div></div>
+            </div>
+
+            <FilterComponent category="Haircare" />
+        </div>
+
+        <section class="product-section-products">
+            <div class="product-container-products" v-for="product in products" :key="product.id">
+                <div class="product-image-products">
+                    <img :src="product.image" alt="Product Image">
+                </div>
+                <div class="product-title-products">{{ product.name }}</div>
+                <div class="product-details-products">
+
+                    <FavoriteIcon :product="product" />
+
+                    <div class="product-price-products">₱{{ product.price }}</div>
+                    <img 
+                        src="/assets/img/shopping-cart.png" 
+                        alt="Cart Icon" 
+                        @click="addToCart(product)"
+                        class="cart-icon"
+                        :class="{ 'adding': isAddingToCart[product.id] }"
+                    >
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <FooterComponent
+        :aboutUrl="aboutUrl"
+        :homeUrl="homeUrl"
+        :contactUrl="contactUrl"
+    />
+</template>
+
+<script>
+import { defineComponent, ref, onMounted, getCurrentInstance } from 'vue';
+import axios from 'axios';
+import MainHeaderComponent from '@/Components/UI/MainHeaderComponent.vue';
+import FooterComponent from '@/Components/UI/FooterComponent.vue';
+import NavbarComponent from '@/Components/UI/NavbarComponent.vue';
+import FilterComponent from '@/Components/UI/FilterComponent.vue';
+import FavoriteIcon from "@/Components/UI/FavoriteIcon.vue";
+import { useFavoritesStore } from '@/stores/favorites';
+import { eventBus } from '@/eventBus';
+
+export default defineComponent({
+    name: 'HaircarePage',
+    components: {
+        FavoriteIcon,
+        MainHeaderComponent,
+        FooterComponent,
+        NavbarComponent,
+        FilterComponent,
+    },
+    
+    setup() {
+        const instance = getCurrentInstance();
+        const favoritesStore = useFavoritesStore();
+        const products = ref([]);
+        const isAddingToCart = ref({});
+        const headerComponentRef = ref(null);
+        
+        // URLs
+        const urls = {
+            aboutUrl: '/about',
+            homeUrl: '/home',
+            contactUrl: '/contact',
+            haircareUrl: '/haircare',
+            makeupUrl: '/makeup',
+            skincareUrl: '/skincare',
+        };
+
+        const showNotification = (type, message) => {
+            if (instance?.proxy?.$notify) {
+                instance.proxy.$notify({
+                    type,
+                    text: message
+                });
+            }
+        };
+
+        const fetchProducts = async () => {
+            try {
+                const response = await axios.get('/api/products', { params: { type_id: 2 } });
+                products.value = response.data;
+
+                const favoriteResponse = await axios.get('/api/favorites');
+                const favoritedProductIds = new Set(favoriteResponse.data.map((fav) => fav));
+
+                products.value.forEach((product) => {
+                    product.is_favorited = favoritedProductIds.has(product.id);
+                });
+
+                eventBus.favorites = products.value.filter(product => product.is_favorited);
+                favoritesStore.favoritesCount = eventBus.favorites.length;
+                eventBus.favoritesCount = favoritesStore.favoritesCount;
+            } catch (error) {
+                console.error('Error fetching products or favorites:', error);
+            }
+        };
+
+        const addToCart = async (product) => {
+            isAddingToCart.value[product.id] = true;
+
+            try {
+                await axios.post('/api/cart/add', {
+                    product_id: product.id,
+                    quantity: 1
+                });
+
+                // Update cart items and count in header
+                const headerComponent = instance?.proxy?.$refs.headerComponent;
+                if (headerComponent) {
+                    await headerComponent.fetchCartItems();
+                    await headerComponent.updateCartCount();
+                }
+
+                showNotification('success', 'Product added to cart successfully!');
+
+            } catch (error) {
+                console.error('Error adding to cart:', error);
+                showNotification('error', 'Failed to add product to cart');
+            } finally {
+                setTimeout(() => {
+                    isAddingToCart.value[product.id] = false;
+                }, 500);
+            }
+        };
+
+        onMounted(fetchProducts);
+
+        return {
+            ...urls,
+            products,
+            favoritesStore,
+            isAddingToCart,
+            addToCart,
+            headerComponentRef,
+        };
+    },
+});
+</script>
+
+<style scoped>
+.product-section-products {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Creates 5 equal columns */
+    gap: 20px; /* Space between products */
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px; /* Adjust based on your layout needs */
+    margin: 0 auto;
+    margin-top: 420px; /* Keep your existing top margin */
+    position: absolute;
+    top: 10px;
+    left: 50px; 
+}
+
+.product-container-products {
+    border: 1px solid #b5b5b5;
+    height: 280px;
+    border-radius: 12px;
+    width: 100%; /* Takes full width of grid cell */
+    max-width: 220px; /* Maximum width of each product */
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s;
+    position: relative;
+    cursor: pointer;
+    margin: 0; /* Remove margin since we're using grid gap */
+    justify-self: center; /* Center products in their grid cells */
+}
+
+.product-container-products:hover {
+    transform: scale(1.05);
+}
+
+.product-image-products {
+    width: 100%;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.product-image-products img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.product-title-products {
+    padding: 6px;
+    font-family: Abel, var(--default-font-family);
+    color: #731b81;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    height: 47px;
+}
+
+.product-details-products {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.product-price-products {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Poppins, var(--default-font-family);
+    font-weight: 250;
+    -webkit-text-stroke: 1px #ae52b0;
+    color: #ae52b0;
+}
+
+.cart-icon {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.cart-icon:hover {
+    transform: scale(1.1);
+}
+
+.cart-icon.adding {
+    animation: addToCart 0.5s ease;
+}
+
+@keyframes addToCart {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.product-container-products {
+    cursor: pointer;
+}
+
+/* Add responsive design for smaller screens */
+@media (max-width: 1200px) {
+    .product-section-products {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .product-section-products {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .product-section-products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .product-section-products {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+</style>

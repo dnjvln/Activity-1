@@ -1,0 +1,865 @@
+.main-container-accountss-seller {
+    position: relative;
+    width: 999px;
+    height: 893px;
+    margin: -500px 0 0 250px;
+    z-index: 1;
+
+  }
+
+  .main-container-accountss,
+  .main-container-accountss * {
+    box-sizing: border-box;
+  }
+
+  input,
+  select,
+  textarea,
+  button {
+    outline: 0;
+  }
+
+  .main-container-accountss {
+    position: relative;
+    width: 999px;
+    height: 893px;
+    margin: -500px 0 0 180px;
+    z-index: 1;
+
+  }
+
+  .frame-accountss {
+    position: absolute;
+    width: 999px;
+    height: 893px;
+    top: 0;
+    left: 0;
+    font-size: 0px;
+    background: #ffffff;
+    border: 1px solid #000000;
+    overflow: hidden;
+    border-radius: 4px;
+  }
+
+  .edit-profile-accountss {
+    display: block;
+    position: relative;
+    height: 28px;
+    margin: 33px 0 0 42px;
+    color: #363636;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 1;
+  }
+
+  .image-accountss {
+    position: relative;
+    width: 157px;
+    height: 157px;
+    margin: 25px 0 0 445px;
+    background: url(./assets/img/adc5c12337bb879f6d5dbdda1828b73f6439e893.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 46;
+  }
+
+  .flex-row-cc-accountss {
+    position: relative;
+    width: 238px;
+    height: 41px;
+    margin: 23px 0 0 400px;
+    z-index: 45;
+  }
+
+  .rectangle-accountss {
+    position: absolute;
+    width: 238px;
+    height: 35px;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    background: #d9d9d9;
+    border: none;
+    z-index: 44;
+    border-radius: 6px;
+  }
+
+  .set-profile-accountss {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 39px;
+    top: 2px;
+    left: 74px;
+    color: #000000;
+    font-family: Abel, var(--default-font-family);
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 31.86px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 45;
+  }
+
+
+
+
+  .flex-row-adf-accountss {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 860px;
+    height: 82px;
+    margin: 65px 0 0 59px;
+    z-index: 31;
+  }
+  .frame-1-accountss {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 8px;
+    position: relative;
+    width: 390px;
+    z-index: 19;
+  }
+  .full-name-accountss {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 24px;
+    color: #000000;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 20;
+  }
+  .placebox-info-accountss {
+    flex-shrink: 0;
+    position: relative;
+    width: 390px;
+    height: 50px;
+    font-size: 0px;
+    z-index: 21;
+    overflow: hidden;
+  }
+  .section-2-accountss {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #f5f5f5;
+    z-index: 22;
+    overflow: hidden;
+    border-radius: 4px;
+  }
+  .Input-accountss {
+    position: absolute;
+    width: 390px;
+    height: 50px;
+    top: 0;
+    left: 0;
+    background: transparent;
+    border: none;
+    z-index: 24;
+    outline: none;
+  }
+  .section-3-accountss {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 8px;
+    position: relative;
+    width: 390px;
+    z-index: 31;
+  }
+  .text-5-accountss {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 24px;
+    color: #000000;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 32;
+  }
+  .section-4-accountss {
+    flex-shrink: 0;
+    position: relative;
+    width: 390px;
+    height: 50px;
+    font-size: 0px;
+    z-index: 33;
+    overflow: hidden;
+  }
+
+
+
+
+
+
+
+
+
+  .frame-9-accountss {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 8px;
+    position: relative;
+    width: 780px;
+    z-index: 3;
+  }
+  .password-changes-accountss {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 24px;
+    color: #000000;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 4;
+  }
+  .placebox-info-a-accountss {
+    flex-shrink: 0;
+    position: relative;
+    width: 387px;
+    height: 50px;
+    font-size: 0px;
+    z-index: 5;
+    overflow: hidden;
+  }
+  .place-to-info-box-c-accountss {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #f5f5f5;
+    z-index: 6;
+    overflow: hidden;
+    border-radius: 4px;
+  }
+  .placebox-info-input-d-accountss {
+    position: absolute;
+    width: 387px;
+    height: 50px;
+    top: 0;
+    left: 0;
+    background: transparent;
+    border: none;
+    z-index: 8;
+    outline: none;
+  }
+  .placebox-info-e-accountss {
+    flex-shrink: 0;
+    position: relative;
+    width: 387px;
+    height: 50px;
+    font-size: 0px;
+    z-index: 9;
+    overflow: hidden;
+  }
+  .place-to-info-box-10-accountss {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #f5f5f5;
+    z-index: 10;
+    overflow: hidden;
+    border-radius: 4px;
+  }
+  .placebox-info-input-11-accountss {
+    position: absolute;
+    width: 387px;
+    height: 50px;
+    top: 0;
+    left: 0;
+    background: transparent;
+    border: none;
+    z-index: 12;
+    outline: none;
+  }
+  .frame-12-accountss {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 32px;
+    position: absolute;
+    width: 303px;
+    height: 56px;
+    top: 50%;
+    right: 0;
+    padding: 0;
+    transform: translate(0, 51.79%);
+    z-index: 37;
+  }
+  .flex-row-e-accountss {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 860px;
+    height: 56px;
+    margin: 53px 0 0 59px;
+    z-index: 40;
+  }
+  .button-accountss {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 10px;
+    position: relative;
+    width: 231px;
+    padding: 16px 48px 16px 48px;
+    cursor: pointer;
+    background: #84d3ff;
+    border: none;
+    z-index: 40;
+    border-radius: 4px;
+  }
+  .view-all-products-accountss {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 24px;
+    color: #000000;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 41;
+    text-decoration: none;
+  }
+
+  .button-13-accountss {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 10px;
+    position: relative;
+    width: 214px;
+    padding: 16px 48px;
+    cursor: pointer;
+    background: #bf68ce;
+    border: none;
+    z-index: 38;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+
+  .button-13-accountss:hover {
+    background: #9b5ba7;
+  }
+
+
+  .view-all-products-14-accountss {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 24px;
+    color: #f9f9f9;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 39;
+  }
+
+
+
+  .box-2-accountss {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #f5f5f5;
+    z-index: 34;
+    overflow: hidden;
+    border-radius: 4px;
+  }
+  .Input-2-accountss {
+    position: absolute;
+    width: 390px;
+    height: 50px;
+    top: 0;
+    left: 0;
+    background: transparent;
+    border: none;
+    z-index: 36;
+    outline: none;
+  }
+  .wrapper-3-accountss {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 860px;
+    height: 82px;
+    margin: 34px 0 0 59px;
+    z-index: 25;
+  }
+  .box-3-accountss {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 8px;
+    position: relative;
+    width: 390px;
+    z-index: 25;
+  }
+  .email-accountss {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 24px;
+    color: #000000;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 26;
+  }
+  .placebox-info-2-accountss {
+    flex-shrink: 0;
+    position: relative;
+    width: 390px;
+    height: 50px;
+    font-size: 0px;
+    z-index: 27;
+    overflow: hidden;
+  }
+  .place-to-info-box-accountss {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #f5f5f5;
+    z-index: 28;
+    overflow: hidden;
+    border-radius: 4px;
+  }
+  .placebox-info-input-accountss {
+    position: absolute;
+    width: 390px;
+    height: 50px;
+    top: 0;
+    left: 0;
+    background: transparent;
+    border: none;
+    z-index: 30;
+    outline: none;
+  }
+  .frame-3-accountss {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 8px;
+    position: relative;
+    width: 390px;
+    z-index: 13;
+  }
+  .address-accountss {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 24px;
+    color: #000000;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 14;
+  }
+  .placebox-info-4-accountss {
+    flex-shrink: 0;
+    position: relative;
+    width: 390px;
+    height: 50px;
+    font-size: 0px;
+    z-index: 15;
+    overflow: hidden;
+  }
+  .place-to-info-box-6-accountss {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #f5f5f5;
+    z-index: 16;
+    overflow: hidden;
+    border-radius: 4px;
+  }
+  .placebox-info-input-7-accountss {
+    position: absolute;
+    width: 390px;
+    height: 50px;
+    top: 0;
+    left: 0;
+    background: transparent;
+    border: none;
+    z-index: 18;
+    outline: none;
+  }
+  .flex-row-c-accountss {
+    position: relative;
+    width: 860px;
+    height: 170px;
+    margin: 37px 0 0 59px;
+    z-index: 37;
+  }
+  .frame-8-accountss {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 16px;
+    position: absolute;
+    width: 780px;
+    height: 148px;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .frame-9-accountss {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 8px;
+    position: relative;
+    width: 780px;
+    z-index: 3;
+  }
+  .password-changes-accountss {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 24px;
+    color: #000000;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 4;
+  }
+  .placebox-info-a-accountss {
+    flex-shrink: 0;
+    position: relative;
+    width: 387px;
+    height: 50px;
+    font-size: 0px;
+    z-index: 5;
+    overflow: hidden;
+  }
+  .md-b-accountss {
+    display: block;
+    position: relative;
+    height: 24px;
+    margin: 13px 0 0 16px;
+    color: #000000;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+    opacity: 0.5;
+    z-index: 7;
+  }
+  .place-to-info-box-c-accountss {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #f5f5f5;
+    z-index: 6;
+    overflow: hidden;
+    border-radius: 4px;
+  }
+  .placebox-info-input-d-accountss {
+    position: absolute;
+    width: 387px;
+    height: 50px;
+    top: 0;
+    left: 0;
+    background: transparent;
+    border: none;
+    z-index: 8;
+    outline: none;
+  }
+  .placebox-info-e-accountss {
+    flex-shrink: 0;
+    position: relative;
+    width: 387px;
+    height: 50px;
+    font-size: 0px;
+    z-index: 9;
+    overflow: hidden;
+  }
+  .md-f-accountss {
+    display: block;
+    position: relative;
+    height: 24px;
+    margin: 13px 0 0 16px;
+    color: #000000;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+    opacity: 0.5;
+    z-index: 11;
+  }
+  .place-to-info-box-10-accountss {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #f5f5f5;
+    z-index: 10;
+    overflow: hidden;
+    border-radius: 4px;
+  }
+  .placebox-info-input-11-accountss {
+    position: absolute;
+    width: 387px;
+    height: 50px;
+    top: 0;
+    left: 0;
+    background: transparent;
+    border: none;
+    z-index: 12;
+    outline: none;
+  }
+  .frame-12-accountss {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 32px;
+    position: absolute;
+    width: 303px;
+    height: 56px;
+    top: 50%;
+    right: 0;
+    padding: 0;
+    transform: translate(0, 51.79%);
+    z-index: 37;
+  }
+  .flex-row-e-accountss {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 860px;
+    height: 56px;
+    margin: 53px 0 0 59px;
+    z-index: 40;
+  }
+
+  .button-accountss {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 10px;
+    position: relative;
+    width: 231px;
+    padding: 16px 48px;
+    cursor: pointer;
+    background: #84d3ff;
+    border: none;
+    z-index: 40;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.button-accountss:hover {
+    background: #72bbe2;
+}
+
+
+.view-all-products-accountss {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 24px;
+    color: #000000;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 41;
+}
+  .button-13-accountss {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 10px;
+    position: relative;
+    width: 214px;
+    padding: 16px 48px 16px 48px;
+    cursor: pointer;
+    background: #bf68ce;
+    border: none;
+    z-index: 38;
+    border-radius: 4px;
+  }
+  .view-all-products-14-accountss {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 24px;
+    color: #f9f9f9;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 39;
+  }
+
+
+
+
+
+  .flex-column-ada-seller {
+    position: absolute;
+    width: 244px;
+    height: 136px;
+    top: 390px;
+    left: 30px;
+    font-size: 0px;
+    z-index: 5;
+  }
+  .flex-column-ada-seller a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+  }
+
+  .flex-column-ada-seller a:hover {
+    color: #bf68ce;
+  }
+
+  .flex-column-ada-seller .edit-profile-seller {
+    color: #bf68ce;
+  }
+
+
+
+  .edit-profile-seller {
+    display: block;
+    position: relative;
+    height: 28px;
+    margin: 0 0 0 12px;
+    color: #252525;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 3;
+  }
+  .my-products-5-seller {
+    display: block;
+    position: relative;
+    height: 28px;
+    margin: 30px 0 0 2px;
+    color: #bf68ce;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 4;
+  }
+  .create-product-seller {
+    display: block;
+    position: relative;
+    height: 28px;
+    margin: 27px 0 0 3px;
+    color: #363636;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 5;
+  }
+
+

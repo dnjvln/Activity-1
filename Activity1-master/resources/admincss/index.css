@@ -1,0 +1,202 @@
+
+
+.SELLERS .overlap-4 {
+    position: absolute;
+    width: 238px;
+    height: 39px;
+    top: 620px;
+    left: 10px;
+}
+
+.SELLERS .rectangle-4 {
+    position: absolute;
+    width: 39px;
+    height: 39px;
+    top: 0;
+    left: 68px;
+    background-color: #c986ff;
+}
+
+.SELLERS .page {
+    height: 24px;
+    top: 7px;
+    left: 0;
+    font-family: "Roboto-Medium", Helvetica;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0.20px;
+    line-height: 24px;
+    white-space: nowrap;
+    position: absolute;
+    color: #000000;
+}
+
+
+
+
+
+.pages-footer{
+    position: absolute;
+    top: -150px;
+    left: 400px;
+    z-index: 10;
+}
+
+.SELLERS .text-wrapper-23 {
+    position: absolute;
+    height: 24px;
+    top: 778px;
+    left: 430px;
+    font-family: "Roboto-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0.20px;
+    line-height: 24px;
+    white-space: nowrap;
+}
+
+.SELLERS .chevron-right-3 {
+    position: absolute;
+    width: 30px;
+    height: 28px;
+    top: 775px;
+    left: 586px;
+}
+
+
+.dashboard .overlap-2 {
+    position: absolute;
+    width: calc(100% - 286px);
+    height: 677px;
+    top: 88px;
+    left: 286px;
+}
+
+.dashboard .widget {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.dashboard .background {
+    position: absolute;
+    width: 100%;
+    height: 611px;
+    top: 66px;
+    left: -25px;
+    background-color: #ffffff;
+    border-radius: 14px;
+}
+
+.dashboard .text-wrapper-9 {
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    font-family: "Roboto-Medium", Helvetica;
+    font-weight: 500;
+    font-size: 25px;
+    letter-spacing: 0.25px;
+    line-height: 24px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.dashboard {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #f7f7f7;
+    width: 100%;
+    height: 121%;
+}
+
+.dashboard .div {
+    position: absolute;
+    width: 274px;
+    height: 79px;
+    top: -10px;
+    left: -35px;
+    background-color: #cf93ff;
+}
+
+.dashboard .rectangle-3 {
+    position: absolute;
+    width: 100%;
+    height: 59px;
+    top: 0;
+    left: 240px;
+    background-color: #ffffff;
+}
+
+.dashboard .user-profile-icon {
+    position: absolute;
+    width: 40px;
+    height: 34px;
+    top: 15px;
+    right: 20px;
+    object-fit: cover;
+}
+
+.dashboard .text-wrapper-2 {
+    position: absolute;
+    width: 59px;
+    top: 22px;
+    right: 80px;
+    font-family: "Abel-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+}
+
+.dashboard .text-wrapper {
+    position: absolute;
+    top: 16px;
+    left: 50px;
+    font-family: "Abel-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 25px;
+    text-align: center;
+}
+
+.dashboard .overlap-wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+
+.dashboard .overlap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.dashboard .overlap-group {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}

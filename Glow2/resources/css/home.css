@@ -1,0 +1,329 @@
+:root {
+    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+}
+
+.logo-container {
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    z-index: 10;
+}
+
+.logo {
+    width: 95px;
+    height: auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    overflow: hidden;
+}
+
+.main-container {
+    position: relative;
+    width: 1349px;
+    height: 821px;
+    margin: 0 0 0 0px;
+    font-size: 0px;
+    overflow: hidden;
+}
+
+.gradient {
+    position: absolute;
+    width: 1720px;
+    height: 1072px;
+    top: -154px;
+    left: -40px;
+    background: url(./assets/img/gradient.png) no-repeat center;
+    background-size: cover;
+}
+.rectangle {
+    position: absolute;
+    width: 1720px;
+    height: 821px;
+    top: 0;
+    left: -40px;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: 1;
+}
+.radiance-meets-elegance {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    width: 718px;
+    height: 55px;
+    margin: 183px 0 0 255px;
+    color: #731b81;
+    font-family: Katibeh, var(--default-font-family);
+    font-size: 65px;
+    font-weight: 400;
+    line-height: 55px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 3;
+}
+
+.high-quality-products {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    width: 763px;
+    height: 110px;
+    margin: 17px 0 0 255px;
+    color: #836189;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 37.5px;
+    text-align: center;
+    z-index: 7;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 8px;
+    position: relative;
+    width: 196px;
+    height: 58px;
+    margin: 46px 0 0 525px;
+    cursor: pointer;
+    background: #ff96ee;
+    border: 1px solid #731b81;
+    z-index: 4;
+    border-radius: 100px;
+    box-shadow: 0 4px 4px 0 rgba(12, 12, 13, 0.05);
+    transition: background 0.3s ease;
+}
+
+.button:hover {
+    background: #e68fc2;
+}
+
+.state-layer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0;
+    gap: 8px;
+    position: relative;
+    min-width: 0;
+    min-height: 0;
+    padding: 10px 24px;
+    z-index: 5;
+}
+
+.shop-now {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    width: 110px;
+    height: 20px;
+    color: #731b81;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    white-space: nowrap;
+    letter-spacing: 0.1px;
+    z-index: 6;
+}
+
+.auth-button {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 16px;
+    position: absolute;
+    width: 240px;
+    height: 40px;
+    top: 31px;
+    left: 1060px;
+    z-index: 10;
+}
+
+.auth-button-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    padding: 12px;
+    border-radius: 8px;
+    overflow: hidden;
+    background: rgba(255, 151, 238, 0);
+    transition: background 0.3s ease;
+    cursor: pointer;
+}
+
+.auth-button-item:hover {
+    background: #F3CCF9;
+}
+
+.auth-button-item a {
+    text-decoration: none;
+}
+
+.button-text {
+    color: #731c82;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    white-space: nowrap;
+    transition: color 0.3s ease;
+}
+
+.auth-button-item:hover .button-text {
+    color: #731c82;
+}
+
+
+.glow-and-grace {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute;
+    width: 262px;
+    height: 29px;
+    top: 37px;
+    left: 131px;
+    color: #731b81;
+    font-family: Katibeh, var(--default-font-family);
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 29px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 2;
+}
+
+.button-group {
+    display: flex;
+    align-items: flex-start;
+    position: absolute;
+    top: 4.63%;
+    left: 41.5%;
+    gap: 70px;
+    z-index: 17;
+}
+
+.maluoykaw{
+    position:absolute;
+    left: 50px;
+}
+
+.maluoykawauth{
+    position:absolute;
+    left: 400px;
+}
+
+.maluoykawauth-login{
+    position:absolute;
+    left: 80px;
+}
+
+
+.nav-button {
+    color: #731b81;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 40px;
+    text-align: left;
+    white-space: nowrap;
+    transition: color 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-button:hover {
+    color: #ff96ee;
+}
+
+
+.makeup, .skincare, .haircare {
+    position: absolute;
+    opacity: 0.85;
+    transition: opacity 0.3s ease;
+    width: 100%;
+    height: 100%;
+}
+
+.makeup {
+    width: 257px;
+    height: 333px;
+    top: 502px;
+    left: 80px;
+    background: url(./assets/img/makeup-2.png) no-repeat center;
+    background-size: cover;
+    z-index: 9;
+}
+
+.skincare {
+    width: 379px;
+    height: 309px;
+    top: 512px;
+    left: 420px;
+    background: url(./assets/img/skincare.png) no-repeat center;
+    background-size: cover;
+    z-index: 16;
+}
+
+.haircare {
+    width: 471px;
+    height: 299px;
+    top: 522px;
+    left: 850px;
+    background: url(./assets/img/haircare.png) no-repeat center;
+    background-size: cover;
+    z-index: 15;
+}
+
+.makeup:hover {
+    width: 257px;
+    height: 353px;
+    top: 490px;
+    left: 80px;
+    background: url(./assets/img/makeup-hover.png) no-repeat center;
+    opacity: 1;
+}
+
+.skincare:hover {
+    background: url(./assets/img/skincare-hover.png) no-repeat center;
+    background-size: cover;
+    opacity: 1;
+}
+
+.haircare:hover {
+    width: 471px;
+    height: 299px;
+    top: 522px;
+    left: 808px;
+    background: url(./assets/img/haircare-hover.png) no-repeat center;
+    opacity: 1;
+}
+
+
+.no-underline {
+    text-decoration: none;
+}

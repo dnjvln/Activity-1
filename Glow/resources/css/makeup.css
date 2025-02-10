@@ -1,0 +1,158 @@
+
+
+/* FILTER */
+.filter-container-makeup {
+    overflow: hidden;
+}
+
+.filter-container-makeup,
+.filter-container-makeup * {
+    box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+    outline: 0;
+}
+
+.filter-container-makeup {
+    display: none; /* Initially hidden */
+    overflow: hidden;
+    position: absolute; /* Required for z-index */
+    z-index: 300; /* Ensure it appears above other elements */
+    background-image: url(../Skincare/images/rectangle-4.png);
+    background-size: 100% 100%; /* Auto width and full height */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    width: 260px;
+    height: 300px; /* Increase height to stretch the image */
+    margin: 0 auto;
+    border-radius: 20px;
+    top: 140px;
+    left: 110px;
+}
+
+
+
+.chevron-down-makeup {
+    position: absolute;
+    width: 22px;
+    height: 26px;
+    top: 38px;
+    left: 210px;
+    z-index: 77;
+    overflow: hidden;
+}
+
+.chevron-down-makeup {
+    cursor: pointer;
+    transition: transform 0.6s; /* Animation duration */
+}
+
+.rotate {
+    transform: rotate(180deg); /* Rotate to 180 degrees */
+}
+
+.filter-container-makeup {
+    display: none; /* Initially hidden */
+}
+
+.filter-container-show-makeup {
+    display: block; /* Show when the class is added */
+}
+
+/* FILTER-HOVER */
+.filter-container-hover-makeup {
+    background-color: rgba(255, 221, 250, 0.8); /* Color with transparency */
+}
+
+/* Style for links */
+.filter-container-a-makeup {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Use the text color of the parent element */
+}
+
+.filter-container-a-hover-makeup {
+    text-decoration: none; /* Optional: Add underline on hover for links */
+}
+
+
+
+
+
+/* Group styles */
+.group-1-makeup,
+.group-2-makeup,
+.group-3-makeup,
+.group-4-makeup,
+.group-5-makeup,
+.group-6-makeup,
+.group-7-makeup {
+    position: relative;
+    width: 183.365px; /* Adjust width as needed */
+    height: 30px;     /* Adjust height as needed */
+    margin: 12px 0 0 31px; /* Adjust margin to reduce vertical spacing */
+    padding: 5px 0;  /* Smaller padding (adjust as needed) */
+    z-index: 1;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Hover effect with transparency */
+.group-1-makeup:hover,
+.group-2-makeup:hover,
+.group-3-makeup:hover,
+.group-4-makeup:hover,
+.group-5-makeup:hover,
+.group-6-makeup:hover,
+.group-7-makeup:hover {
+    background-color: rgba(255, 221, 250, 0.7); /* Adjust alpha for transparency */
+}
+
+/* Link styles */
+a {
+    text-decoration: none; 
+    color: #731c82; 
+    padding: 5px 10px; 
+}
+
+/* Updated item classes */
+.foundations,
+.concealers,
+.blushes,
+.lip-tints,
+.eyeshadows,
+.mascaras,
+.primers {
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start;
+    position: absolute;
+    height: 30px;
+    top: 0;
+    left: 0;
+    color: inherit; 
+    font-family: Abel, var(--default-font-family);
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 2;
+}
+
+/* Number classes */
+.number-4-makeup,
+.number-15-makeup,
+.number-30-makeup,
+.number-10-makeup,
+.rectangle-20-makeup {
+    position: absolute;
+    left: 140px;
+    top: 1px;
+    color: #731c82;
+    font-family: Abel, var(--default-font-family);
+    font-size: 25px;
+    line-height: 30px;
+}
